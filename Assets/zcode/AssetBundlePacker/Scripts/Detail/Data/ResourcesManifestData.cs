@@ -35,8 +35,8 @@ namespace zcode.AssetBundlePacker
             public string AssetBundleName;                      // AssetBundleName
             public List<string> Assets = new List<string>();    // 资源列表
             public List<string> Scenes = new List<string>();    // 场景列表
-            public long Size;                                   // AssetBundle大小
-            public long CompressSize;                           // 压缩包大小 
+            public int  Size;                                   // AssetBundle大小
+            public int  CompressSize;                           // 压缩包大小 
             public bool IsCompress = false;                     // 是否压缩
             public bool IsNative = false;                       // 是否打包到安装包中（原始资源）
             public bool IsPermanent = false;                    // 是否常驻内存

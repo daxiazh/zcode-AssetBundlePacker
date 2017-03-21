@@ -146,7 +146,7 @@ namespace zcode
         /// </summary>
         /// <param name="file_path"></param>
         /// <returns></returns>
-        public static long GetFileSize(string file_path)
+        public static int GetFileSize(string file_path)
         {
             long sum = 0;
             if (!File.Exists(file_path))
@@ -158,7 +158,7 @@ namespace zcode
                 FileInfo Files = new FileInfo(file_path);
                 sum += Files.Length;
             }
-            return sum;
+            return (int)sum;
         }
 
         /// <summary>

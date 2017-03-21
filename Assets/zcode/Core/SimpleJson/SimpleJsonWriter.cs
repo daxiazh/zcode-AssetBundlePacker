@@ -51,7 +51,8 @@ namespace zcode
 
             try
             {
-                str = SimpleJson.SimpleJson.SerializeObject(json);
+                // str = SimpleJson.SimpleJson.SerializeObject(json);
+                str = LitJson.JsonMapper.ToJson(json);
 
                 return true;
             }

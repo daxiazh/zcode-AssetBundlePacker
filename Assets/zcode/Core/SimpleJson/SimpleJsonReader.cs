@@ -45,7 +45,8 @@ namespace zcode
                 if (string.IsNullOrEmpty(str))
                     return false;
 
-                data = SimpleJson.SimpleJson.DeserializeObject<T>(str);
+                data = LitJson.JsonMapper.ToObject<T>(str);
+                // data = SimpleJson.SimpleJson.DeserializeObject<T>(str);
                 return true;
             }
             catch (System.Exception ex)
