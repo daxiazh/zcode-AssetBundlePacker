@@ -79,7 +79,7 @@ namespace zcode.AssetBundlePacker
         }
 
         /// <summary>
-        ///   配置场景信息
+        ///   配置场景信息. 这包含保存场景中需要动态加载的对象的信息,及临时删除掉需要动态加载的对象.
         /// </summary>
         public static void GenerateSceneConfig(string scene_path)
         {
@@ -128,6 +128,7 @@ namespace zcode.AssetBundlePacker
             }
         }
 
+        // 保存场景中需要动态加载的对象.
         static void SaveAll()
         {
             UnityEngine.SceneManagement.Scene sc = UnityEngine.SceneManagement.SceneManager.GetActiveScene();
@@ -166,6 +167,7 @@ namespace zcode.AssetBundlePacker
             AssetDatabase.Refresh();
         }
 
+        // 临时删除掉场景中需要动态加载的对象
         static void RemoveAll()
         {
             UnityEngine.SceneManagement.Scene sc = UnityEngine.SceneManagement.SceneManager.GetActiveScene();

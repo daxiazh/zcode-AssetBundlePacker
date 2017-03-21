@@ -17,17 +17,17 @@ namespace zcode.AssetBundlePacker
         /// <summary>
         ///   资源相对目录
         /// </summary>
-        public static readonly string RESOURCES_LOCAL_DIRECTORY = "Assets/Resources/";
+        public static readonly string RESOURCES_LOCAL_DIRECTORY = "Assets/BundleResources/";
 
         /// <summary>
         ///   资源全局目录 
         /// </summary>
-        public static readonly string RESOURCES_DIRECTORY = Application.dataPath + "/Resources/";
+        public static readonly string RESOURCES_DIRECTORY = Application.dataPath + "/BundleResources/";
 
         /// <summary>
         /// 
         /// </summary>
-        public static readonly string RESOURCES_PATH = Application.dataPath + "/Resources";
+        public static readonly string RESOURCES_PATH = Application.dataPath + "/BundleResources";
 
         /// <summary>
         /// 资源加载方式，默认采用DefaultLoadPattern

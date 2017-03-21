@@ -28,7 +28,7 @@ namespace zcode.AssetBundlePacker
         /// <summary>
         ///   编辑器环境下AssetBundle路径
         /// </summary>
-        public static readonly string PATH = Application.dataPath + "/" + Common.ROOT_FOLDER_NAME;
+        public static readonly string PATH = Common.ROOT_FOLDER_NAME;
 
         /// <summary>
         ///   编辑器环镜下资源起始路径
@@ -38,7 +38,7 @@ namespace zcode.AssetBundlePacker
         /// <summary>
         ///   编辑器环镜下场景起始路径
         /// </summary>
-        public static readonly string SCENE_START_PATH = Application.dataPath + "/Scenes";
+        public static readonly string SCENE_START_PATH = Application.dataPath + "/BundleScenes";
 
         /// <summary>
         ///   编辑器环镜下主Manifest保存路径

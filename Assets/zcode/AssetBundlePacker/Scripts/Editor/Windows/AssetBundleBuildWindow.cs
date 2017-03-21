@@ -405,15 +405,25 @@ namespace zcode.AssetBundlePacker
         void BuildingAssetBundle()
         {
             bool running = true;
+            // 保存配置
             SaveData();
+
+            // 设置AssetBundleName
             running = AssetBundleNameTool.RunningAssetBundleNameTool(asset_bundle_build_);
+
+            // 保存场景中动态加载对象的配置,并临时删除动态加载对象.
             if (running)
                 running = SceneConfigTool.GenerateAllSceneConfig(asset_bundle_build_.Data.Scenes);
+
+            // 打包设置了AssetBundleName的资源到缓冲目录
             if (running)
                 BuildAssetBundle.BuildAllAssetBundlesToTarget(GetBuildTargetType(), build_option_);
+
+            // 加载粒度信息,即一个AssetBundle依赖的对象数量
             if (running)
                 LoadAssetBundleGranularityInfo();
 
+            // 恢复打包前的场景数据
             SceneConfigTool.RestoreAllScene(asset_bundle_build_.Data.Scenes);
         }
 

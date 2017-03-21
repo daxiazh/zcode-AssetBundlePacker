@@ -25,7 +25,7 @@ namespace zcode.AssetBundlePacker
         /// <summary>
         /// 资源所在根文件夹名
         /// </summary>
-        public const string ROOT_FOLDER_NAME = "AssetBundle";
+        public const string ROOT_FOLDER_NAME = "AssetBundles";
 
         /// <summary>
         ///   常驻根路径
