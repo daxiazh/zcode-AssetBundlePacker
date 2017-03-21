@@ -53,7 +53,7 @@ namespace zcode.AssetBundlePacker
         /// <summary>
         ///   主Manifest文件名称（必须存在）
         /// </summary>
-        public const string MAIN_MANIFEST_FILE_NAME = "AssetBundle";
+        public const string MAIN_MANIFEST_FILE_NAME = "AssetBundles";
 
         /// <summary>
         ///   ResourcesManifest文件名称（必须存在）
